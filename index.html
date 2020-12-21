@@ -8,24 +8,25 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header>
+    <header >
       <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
 
+    <div class="main">
     <form action="" id="survey-form">
-      <label for="name-label">Name</label>
+      <label for="name-label">Name</label><br>
       <input type="text" id="name" placeholder="Enter your name ..." required >
-
-      <label for="email-label">Email</label>
+      <br>
+      <label for="email-label">Email</label><br>
       <input type="email" id="email" placeholder="Enter your email ..." required >
-
-      <label for="number-label">Age (Optional)</label>
+      <br>
+      <label for="number-label">Age (Optional)</label><br>
       <input type="number" min ="1" max="70" id="age" placeholder="Enter your age...">
-
-      <label for="question1-label">Which option  best describes your current role?</label>
+      <br>
+      <label for="question1-label">Which option  best describes your current role?</label><br>
       <select name="role" id="dropdown" required>
-        <option value="student">Stduent</option>
+        <option value="student">Student</option>
         <option value="Full Time job">Full Time Job</option>        
         <option value="Full Time learner">Full Time learner</option>
         <option value="Prefer not to say">Prefer not to say</option>
@@ -49,11 +50,12 @@
         <input type="checkbox" name="prefer" value="Videos" id=""> Videos <br>
 
         <p>Any comments or suggestions?</p>
-        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here ..." cols="30" rows="10"></textarea> <br>
+        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here ..." cols="120" rows="10"></textarea> <br>
 
 
-      <button type="submit"> Submit</button>
+      <button class="submit" type="submit"> Submit</button>
     </form>
+  </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
