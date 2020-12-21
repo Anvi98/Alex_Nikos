@@ -15,14 +15,14 @@
 
     <div class="main">
     <form action="" id="survey-form">
-      <label for="name-label">Name</label><br>
+      <label id="name-label" for="name">Name</label><br>
       <input type="text" id="name" placeholder="Enter your name ..." required >
       <br>
-      <label for="email-label">Email</label><br>
+      <label id="email-label" for="email">Email</label><br>
       <input type="email" id="email" placeholder="Enter your email ..." required >
       <br>
-      <label for="number-label">Age (Optional)</label><br>
-      <input type="number" min ="1" max="70" id="age" placeholder="Enter your age...">
+      <label id="number-label" for="number">Age (Optional)</label><br>
+      <input type="number" min ="1" max="70" id="number" placeholder="Enter your age...">
       <br>
       <label for="question1-label">Which option  best describes your current role?</label><br>
       <select name="role" id="dropdown" required>
@@ -50,10 +50,9 @@
         <input type="checkbox" name="prefer" value="Videos" id=""> Videos <br>
 
         <p>Any comments or suggestions?</p>
-        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here ..." cols="120" rows="10"></textarea> <br>
+        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here ..." rows="10"></textarea> <br>
 
-
-      <button class="submit" type="submit"> Submit</button>
+      <button id="submit" type="submit"> Submit</button>
     </form>
   </div>
     <script  src="js/index.js"></script>
