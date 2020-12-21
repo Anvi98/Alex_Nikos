@@ -8,9 +8,52 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
 
-    <h1>Hello World !</h1>
-    -->
+    <form action="" id="survey-form">
+      <label for="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name ..." required >
+
+      <label for="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email ..." required >
+
+      <label for="number-label">Age (Optional)</label>
+      <input type="number" min ="1" max="70" id="age" placeholder="Enter your age...">
+
+      <label for="question1-label">Which option  best describes your current role?</label>
+      <select name="role" id="dropdown" required>
+        <option value="student">Stduent</option>
+        <option value="Full Time job">Full Time Job</option>        
+        <option value="Full Time learner">Full Time learner</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" name="recommendation" id="recommend" value="Definitely" checked>
+        <label for="Definitely">Definitely</label><br>
+        <input type="radio" name="recommendation" id="recommend" value="Maybe">
+        <label for="Maybe">Maybe</label> <br>
+        <input type="radio" name="recommendation" id="recommend" value="Not sure">
+        <label for="Not sure"> Not sure</label><br>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+
+        <input type="checkbox" name="prefer" value="Front-end Projects" id=""> Front-end-Projects <br>
+        <input type="checkbox" name="prefer" value="Back-end Projects" id=""> Back-end Projects <br>
+        <input type="checkbox" name="prefer" value="Data Visualization" id=""> Data Visualization <br>
+        <input type="checkbox" name="prefer" value="Challenges" id=""> Challenges <br>
+        <input type="checkbox" name="prefer" value="Open Source Community" id=""> Open Source Community <br>
+        <input type="checkbox" name="prefer" value="Gitter help rooms" id=""> Gitter help rooms <br>
+        <input type="checkbox" name="prefer" value="Videos" id=""> Videos <br>
+
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here ..." cols="30" rows="10"></textarea> <br>
+
+
+      <button type="submit"> Submit</button>
+    </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
